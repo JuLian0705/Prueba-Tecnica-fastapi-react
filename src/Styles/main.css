@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Pacifico&family=Sigmar&family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sigmar", sans-serif;  
+}
+body {
+  background-color: #000000;
+  font-family: "cal-sans", sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(0, 0, 0, 0.411); 
+    padding: 10px 20px;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; 
+    box-sizing: border-box;
+}
+
+nav a {
+    margin: 0 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #9fe59b;
+}
+
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textcolor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+header div,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+    header nav {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background: var(--mainColor);
+        transition: 1s;
+    }
+    header .responsive {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    nav a {
+        font-size: 1.5rem;
+    }
+}

@@ -19,7 +19,7 @@ npm start
 - Instalar la libreria de fast api
 ```bash
     (pip install fastapi pydantic uvicorn)
-Ejecutar Backend
+Ejecutar proyecto Backend
 uvicorn main:app --reload
 
 #####  SQL SERVER MANAGEMENT STUDIO 20 (SQL SERVER)

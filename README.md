@@ -20,7 +20,14 @@
     (pip install fastapi pydantic uvicorn)
 
 #####  SQL SERVER MANAGEMENT STUDIO 20 (SQL SERVER)
-- Tener SQL SERVER Instalado **SQL** 
+- Tener SQL SERVER Instalado **SQL**
+###### Ejecutar Front-End
+npm start
+###### Ejecutar Backend
+uvicorn main:app --reload
+
+
+
 
 
 
